@@ -1,7 +1,7 @@
 # 리포트 템플릿
 
 핑퐁 완료 후 자동 생성하는 md 리포트의 표준 구조.
-deliverable-engine 연동: 프레이밍(수신자+목적+핵심메시지) → 작성(모래시계) → QC.
+프레이밍(수신자+목적+핵심메시지) → 작성(모래시계) → QC.
 
 ---
 
@@ -170,4 +170,4 @@ Phase 4 (M12~): 운영 — 모니터링, 최적화
 경로: SAVE_CHAIN(프로젝트폴더 → VAULT/_inbox → mnt/outputs)
 ```
 
-deliverable-engine의 SAVE_CHAIN 우선순위 적용. 저장 후 경로 1줄 보고.
+SAVE_CHAIN 우선순위 적용. 저장 후 경로 1줄 보고.
