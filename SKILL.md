@@ -1,6 +1,6 @@
 ---
 name: holdings-consulting
-description: "홀딩스(지주회사) 범용 컨설팅 엔진. 신규설립·기존전환·운영최적화·승계설계·해외구조 5대 시나리오 대응. 가이드→핑퐁(10대 판단분기점 기반 적응형 질문)→md 컨설팅 리포트 3단계. 7축 전문지식(법률·세무·재무·거버넌스·전략·사례·프로세스) × 시나리오별 선택 로딩. 중소·중견부터 대기업까지 규모별 맞춤 대응. 일반/TURBO(재무·거버넌스·전략·사례 축 병렬 Agent, 법률·세무는 시퀀셜 유지) 2모드. P1: 홀딩스, 지주회사, 지주전환, 홀딩스컨설팅, 홀딩스컴퍼니, 지주회사설립, 지주회사전환, 인적분할, 물적분할, 지배구조, 순환출자, 지분구조, 배당파이프라인, NAV디스카운트, 금융지주, 터보홀딩스, 홀딩스 터보, TURBO. P2: 컨설팅해줘, 진단해줘, 분석해줘, 설계해줘, 전환해줘, 구조짜줘, 지주만들어줘, 터보로 진단해줘, consult, diagnose, design, restructure, turbo consulting. P3: holding company, holdco, group restructuring, spin-off, demerger, corporate governance, succession planning, tax optimization, turbo consulting, parallel axis analysis. P4: 법인구조 재편시, 승계 전략시, 자회사 신설·매각시, 그룹 리스크분리시, M&A 플랫폼 구축시, 지분구조 최적화시. P5: .md리포트로, 컨설팅보고서로, 진단서로, 구조설계안으로, 전환로드맵으로. NOT: 재무모델링(→financial-model), 사업계획서(→bp-guide), 정책기획(→policy-planning), 단순법률질문(→직접), 일반세무상담(→직접)."
+description: "v1.0 홀딩스(지주회사) 범용 컨설팅 엔진. 신규설립·기존전환·운영최적화·승계설계·해외구조 5대 시나리오 대응. 가이드→핑퐁(10대 판단분기점 기반 적응형 질문)→md 컨설팅 리포트 3단계. 7축 전문지식(법률·세무·재무·거버넌스·전략·사례·프로세스) × 시나리오별 선택 로딩. 중소·중견부터 대기업까지 규모별 맞춤 대응. 일반/TURBO(재무·거버넌스·전략·사례 축 병렬 Agent, 법률·세무는 시퀀셜 유지) 2모드. P1: 홀딩스, 지주회사, 지주전환, 홀딩스컨설팅, 홀딩스컴퍼니, 지주회사설립, 지주회사전환, 인적분할, 물적분할, 지배구조, 순환출자, 지분구조, 배당파이프라인, NAV디스카운트, 금융지주, 터보홀딩스, 홀딩스 터보, TURBO. P2: 컨설팅해줘, 진단해줘, 분석해줘, 설계해줘, 전환해줘, 구조짜줘, 지주만들어줘, 터보로 진단해줘, consult, diagnose, design, restructure, turbo consulting. P3: holding company, holdco, group restructuring, spin-off, demerger, corporate governance, succession planning, tax optimization, turbo consulting, parallel axis analysis. P4: 법인구조 재편시, 승계 전략시, 자회사 신설·매각시, 그룹 리스크분리시, M&A 플랫폼 구축시, 지분구조 최적화시. P5: .md리포트로, 컨설팅보고서로, 진단서로, 구조설계안으로, 전환로드맵으로. NOT: 재무모델링(→financial-model), 사업계획서(→bp-guide), 정책기획(→policy-planning), 단순법률질문(→직접), 일반세무상담(→직접)."
 ---
 
 # Holdings Consulting Engine
@@ -18,6 +18,15 @@ description: "홀딩스(지주회사) 범용 컨설팅 엔진. 신규설립·기
 | 1 | 발동 조건 외 임의 실행 금지 |
 | 2 | 출력 형식 준수 — 내부 라벨 사용자 노출 금지 |
 | 3 | UP 존댓말·호칭 규칙 우선 적용 |
+
+### 에러 처리
+실패 시 즉시 STOP + 사용자 보고. 재시도 최대 2회.
+
+### 피드백
+개선 제안은 thumbs down 버튼으로 Anthropic에 전달.
+
+### 입력 검증
+발동 전 필수 입력 확인. 불충분 시 1줄 질문으로 보완.
 
 ### 자체 점검 (self-check)
 SKILL.md ≤10KB · P1 ≥5개 · Gotchas 존재 확인 후 수정 완료.
