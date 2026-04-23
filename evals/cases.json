@@ -1,0 +1,11 @@
+{
+  "skill": "holdings-consulting",
+  "version": "autoloop-v1",
+  "cases": [
+    {"id":"E01","desc":"description에 P1 키워드 5개 이상","auto_scorable":true},
+    {"id":"E02","desc":"description에 P2/P3/P5/NOT 섹션","auto_scorable":true},
+    {"id":"E03","desc":"SKILL.md에 예시 섹션 존재","auto_scorable":true},
+    {"id":"E04","desc":"절대 규칙/INVARIANT 섹션 존재","auto_scorable":true},
+    {"id":"E05","desc":"Gotchas 3행 이상","auto_scorable":true}
+  ]
+}
