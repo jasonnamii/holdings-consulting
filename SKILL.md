@@ -210,6 +210,18 @@ SKILL.md ≤10KB · P1 ≥5개 · Gotchas 존재 확인 후 수정 완료.
 
 ---
 
+## 🚨 MUST cascade → paper-engine (절대규칙)
+
+**이 스킬의 모든 리포트·산출물 = paper-engine 허브 MUST 경유.** 단독 md/html 출력 = FAIL.
+
+- **진입점:** 모드별 분석 완료 후, 산출물 생성 직전 paper-engine 발동
+- **paper-engine 책임:** MODE_S/M/L · NYT구조 · 3패스삭제 · 4항밀도QC · design-skill cascade 강제
+- **DEFAULT_RENDER = 순수 마크다운:** `.md` 산출 시 `<div>`·`<span>`·`style=` 등 인라인 HTML **전면 금지**. 헤더·불릿·표·인용(`>`)·이모지만 허용
+- **예외:** 사용자가 `"HTML로"·"박스로"·"벤토로"·"시각화"·"카드로"` 명시시에만 html-div-style·apple-box-design cascade 경유
+- **위반 감지:** md 파일에 `<div style>`·`<span style>` 삽입 = 절대규칙 #8 위반 → 재작성
+
+---
+
 ## Gotchas
 
 | 함정 | 대응 |
