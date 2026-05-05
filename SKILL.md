@@ -181,13 +181,23 @@ version: 1.0.0
 
 ---
 
-## §INV NO_WORK_LABEL
-산출물·대화 작업 라벨 ZERO. → `paper-engine/references/no-work-label.md`
+## §INV NO_WORK_LABEL (산출물·대화 본질 보호)
 
+항목정의RULE산출물·대화 = 인간 언어. 작업 라벨 ZERO. (1만 페이지 1단어 = FAIL)판정"이 단어, 이 대화 밖 사람이 사전 없이 읽을 수 있나?" NO → 작업 라벨 → 금지ALLOW업계 전문용어(M&A·SPA·SHA·CB·RCPS·SAFE·NAV·CFC·ESOP·LBO·EBITDA·NPV·IRR) · 고유명사(회사명·브랜드명) · 법조문(공정거래법·상법·민법·금융지주회사법)CONVERT라벨 발견 → 실명·평문 풀어쓰기. 예) "7축·10대 판단분기점·5대 시나리오" → 실제 항목명 / "MECE·spine" → 본문에서 제거 / "Phase 1\~3·M1\~M3" → 진행 단계 평문 / "축 3·4·5·6" → 실제 축 이름(재무·거버넌스·전략·사례)SELF_CHECK§5 품질 게이트 ③문체 단계에서 자체 스캔. 1개라도 발견 = 차단·재작성. paper-engine cascade 경유 시 INV 13 자동 적용
 
-## 🚨 MUST cascade → paper-engine
-모든 산출물 paper-engine MUST 경유. → `paper-engine/references/_common/cascade-must.md`
+---
 
+## 🚨 MUST cascade → paper-engine (절대규칙)
+
+**이 스킬의 모든 리포트·산출물 = paper-engine 허브 MUST 경유.** 단독 md/html 출력 = FAIL.
+
+- **진입점:** 모드별 분석 완료 후, 산출물 생성 직전 paper-engine 발동
+- **paper-engine 책임:** MODE_S/M/L · NYT구조 · 3패스삭제 · 4항밀도QC · design-skill cascade 강제
+- **DEFAULT_RENDER = 순수 마크다운:** `.md` 산출 시 `<div>`·`<span>`·`style=` 등 인라인 HTML **전면 금지**. 헤더·불릿·표·인용(`>`)·이모지만 허용
+- **예외:** 사용자가 `"HTML로"·"박스로"·"벤토로"·"시각화"·"카드로"` 명시시에만 html-div-style·apple-box-design cascade 경유
+- **위반 감지:** md 파일에 `<div style>`·`<span style>` 삽입 = 절대규칙 #8 위반 → 재작성
+
+---
 
 ## Gotchas
 
