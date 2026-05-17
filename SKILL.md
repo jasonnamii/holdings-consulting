@@ -8,9 +8,31 @@ version: 1.0.0
 
 홀딩스 컴퍼니(지주회사) 범용 컨설팅 스킬. 7축 전문지식 + 10대 판단분기점 기반.
 
+
+## Skill Boundaries
+
+- **하는 것** — "v1.0 홀딩스(지주회사) 범용 컨설팅 엔진.
+- **안 하는 것** — 재무모델(→financial-model), BP(→bp-guide), 정책기획(→policy-planning)."
+
 ---
 
 ---
+
+## When to Use
+
+- 사용자가 "컨설팅해줘", "진단해줘", "설계해줘", "전환해줘", "구조짜줘" 같은 표현으로 발동
+- 법인구조 재편시, 승계 전략시, M&A 플랫폼 구축시.
+- **안 쓸 때** — 재무모델(→financial-model), BP(→bp-guide), 정책기획(→policy-planning)."
+
+
+## Prerequisites
+
+| # | 체크 | 미충족 시 |
+|---|------|-----------|
+| 1 | 대상·입력 명확 (스킬 발동 의도 확인) | 1줄 확인 후 진입 |
+| 2 | references/ 폴더 접근 가능 | inline fallback |
+| 3 | scripts/ 실행 권한 | 권한 보정 후 재시도 |
+
 
 ## ⛔ 절대 규칙
 
@@ -199,9 +221,46 @@ version: 1.0.0
 
 ---
 
-## Gotchas
+## Output Path
+
+| 산출물 | 경로 |
+|---|---|
+| 주 산출물 | `mnt/outputs/holdings-consulting_{topic}_{YYYY-MM-DD}.md` |
+| 형식 | 컨설팅보고서로, 진단서로, 전환로드맵으로. |
+| 리서치 결과 (해당 시) | `{VAULT}/_skills research/holdings-consulting/{YYYY-MM-DD}_{topic}.md` |
+
+## Reference Index
+
+| 파일 | 내용 | 언제 |
+|---|---|---|
+| `references/consulting-process.md` | consulting process | 해당 단계 진입 시 |
+| `references/knowledge-finance-governance.md` | knowledge finance governance | 해당 단계 진입 시 |
+| `references/knowledge-legal-tax.md` | knowledge legal tax | 해당 단계 진입 시 |
+| `references/knowledge-strategy-cases.md` | knowledge strategy cases | 해당 단계 진입 시 |
+| `references/pingpong-questions.md` | pingpong questions | 해당 단계 진입 시 |
+| `references/post-doctor-notes.md` | post doctor notes | 해당 단계 진입 시 |
+| `references/report-template.md` | report template | 해당 단계 진입 시 |
+
+
+## Next Phase
+
+본 스킬 작업 후 자연스럽게 이어지는 흐름:
+
+- 후속 작업 → `financial-model`
+- 후속 작업 → `bp-guide`
+- 후속 작업 → `policy-planning`
+
+## Failure Modes (Gotchas)
 
 함정대응핑퐁 질문을 한 번에 20개 쏟아냄Phase당 1\~3문항. 한 번에 최대 3문항7축 전부 로드시나리오에 맞는 중점 축만 로드법률·세무 수치를 기억에서 인출반드시 스포크 로드 후 인용. 특히 지분율·세율·기준연도리포트에 "MECE", "spine" 등 내부용어VOCAB 치환 (내부용어→일반어)세법 개정 미반영스포크 내 연도 명시. 불확실 시 "확인필요" 태그클라이언트 맥락 없이 일반론핑퐁 미완료 시 리포트 생성 차단복합 시나리오 무분별 축 로딩주시나리오 축 우선 + 부시나리오 차분만 추가추천안 없이 대안 나열만반드시 추천안 1개 확정 + 근거 + 전제조건 명시구조도 없는 리포트§4 구조설계 대안마다 ASCII 구조도 필수중소기업에 대기업 프레임 적용자산 5천억 기준으로 규제 적용 분기. §1-6 참조
+
+
+## ❌ WRONG vs ✅ CORRECT
+
+```
+❌ WRONG: 트리거 단어만 보고 발동 — 본질·범위 확인 ✗ → 오발동·범위 이탈
+✅ CORRECT: Skill Boundaries·When to Use 확인 후 발동 → 본질 작업만 수행
+```
 
 ## 참조
 
