@@ -1,6 +1,6 @@
 ---
 name: holdings-consulting
-description: "v1.0 홀딩스(지주회사) 범용 컨설팅 엔진. 5대 시나리오(신규설립·전환·운영·승계·해외) × 7축(법률·세무·재무·거버넌스·전략·사례·프로세스). 일반/TURBO 2모드. P1: 홀딩스, 지주회사, 지주전환, 홀딩스컨설팅, 홀딩스컴퍼니, 인적분할, 물적분할, 지배구조, 순환출자, 지분구조, NAV디스카운트, 금융지주, 터보홀딩스, TURBO. P2: 컨설팅해줘, 진단해줘, 설계해줘, 전환해줘, 구조짜줘, consult, restructure. P3: holding company, holdco, group restructuring, spin-off, demerger, governance, succession, tax optimization. P4: 법인구조 재편시, 승계 전략시, M&A 플랫폼 구축시. P5: 컨설팅보고서로, 진단서로, 전환로드맵으로. NOT: 재무모델(→financial-model), BP(→bp-guide), 정책기획(→policy-planning)."
+description: "v1.0 홀딩스(지주회사) 범용 컨설팅 엔진. 5대 시나리오(신규설립·전환·운영·승계·해외) × 7축(법률·세무·재무·거버넌스·전략·사례·프로세스). 일반/TURBO 2모드. P1: 홀딩스, 지주회사, 지주전환, 홀딩스컨설팅, 홀딩스컴퍼니, 인적분할, 물적분할, 지배구조, 순환출자, 지분구조, NAV디스카운트, 금융지주, 터보홀딩스. P2: 컨설팅해줘, 진단해줘, 설계해줘, 전환해줘, 구조짜줘, consult, restructure. P3: holding company, holdco, group restructuring, spin-off, demerger, governance, succession, tax optimization. P4: 법인구조 재편시, 승계 전략시, M&A 플랫폼 구축시. P5: 컨설팅보고서로, 진단서로, 전환로드맵으로. NOT: 재무모델(→financial-model), BP(→bp-guide), 정책기획(→policy-planning)."
 version: 1.0.0
 ---
 
